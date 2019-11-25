@@ -33,5 +33,12 @@ var Tree = function(value) {
   this.children = [];
 };
 
-
+Object.prototype.map = function(func) {
+    // for (var i = 0; i < this.children.length; i++) {
+    //   this.value = f(val);
+    //   this.children[i].value = f(val);
+    //   this.children[i].children[i].value = f(val);
+    // }
+    return func(val)
+}
 
